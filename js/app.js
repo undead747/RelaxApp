@@ -4,7 +4,8 @@ const locationTimeZone = document.querySelector(".location-timezone");
 const weatherIcon = document.querySelector(".icon");
 const degreeSection = document.querySelector(".degree-section");
 const typeTeperature = document.querySelector("#type-teperature");
-
+const currentDay = document.querySelector(".current-day");
+const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 class UI {
     setIcon(icon, iconID) {
@@ -27,10 +28,13 @@ class UI {
 
         const dailySummary = data.daily.summary;
 
+        let day = new Date();
+
         let temperatureInC;
         let timeZone = data.timezone.replace("/", " - ");
         timeZone = timeZone.replace(/_/g, " ");
 
+        currentDay.textContent = weekday[day.getDay()];
         temperatureInC = Math.floor((temperature - 32) / 1.8);
         tempeDegree.textContent = temperatureInC;
         tempeDiscription.textContent = summary;

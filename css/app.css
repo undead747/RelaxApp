@@ -11,7 +11,7 @@
  */
 
 
- body {
+ .weather-page {
      height: 100vh;
      display: flex;
      flex-direction: column;
@@ -50,6 +50,10 @@
  .degree-section h2 {
      font-size: 40px;
 
+ }
+
+ .current-day {
+     font-size: 28px;
  }
 
  /*
