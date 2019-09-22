@@ -7,8 +7,14 @@
     transition: all 500ms linear;
 }
 
+.sidebar ul a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .sidebar ul li {
     color: rgba(230, 230, 230, 0.9);
+    font-size: 20px;
     list-style: none;
     padding: 15px 10px;
     border-bottom: 1px solid rgba(100, 100, 100, 0.3);
@@ -31,4 +37,5 @@
     height: 5px;
     background: #151719;
     margin: 3px 0px;
+    border-radius: 2px;
 }

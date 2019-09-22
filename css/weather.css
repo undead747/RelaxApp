@@ -1,0 +1,115 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /*  
+   box-sizing : phan tu cua minh giu
+   nguyen kich thuoc mac du cong them
+   padding va border  
+ */
+
+ body {
+     background-size: 100% 100%;
+ }
+
+ .weather-page {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .weather-content {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25),
+         0 6px 20px 0 rgba(0, 0, 0, 0.2);
+     text-align: center;
+ }
+
+ .weather-content {
+     height: 50vh;
+     width: 40vw;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background: linear-gradient(rgb(13, 52, 58), rgb(106, 159, 210));
+     font-family: sans-serif;
+     color: white;
+     border-radius: 8px;
+ }
+
+ .location,
+ .temperature {
+     height: 30vh;
+     width: 50%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .temperature {
+     flex-direction: column;
+ }
+
+ .degree-section {
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+ }
+
+
+ .degree-section span {
+     margin: 10px;
+     font-size: 30px;
+ }
+
+ .degree-section h2 {
+     font-size: 40px;
+
+ }
+
+ .current-day {
+     font-size: 28px;
+ }
+
+ .Date-Time {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .current-date {
+     margin-left: 10px;
+     margin-top: 8px;
+     font-size: 18px;
+ }
+
+ /*
+   display : flex;  
+   Để kích hoạt phần tử chứa có tính
+   năng flexbox chỉ cần thiết lập cho
+   nó thuộc tính display: flex;
+   hoặc display: inline-flex;
+   Khi phần tử đã kích hoạt flexbox thì
+   điều khiển các phần tử con bằng các 
+   thuộc tính: flex-direction flex-wrap
+   
+   height : 100vh; 
+   1 vw=1% chiều ngang của trình duyệt. 
+   1 vh=1% chiều cao của trình duyệt.
+   
+   justify-content: Nó nhận các giá 
+   trị để đẩy các phần tử trôi về phía 
+   nào đó của hướng chính
+  
+       
+   flex-direction : cac muc duoc sap xep
+   theo thu tu tu tren xuong duoi (cột)
+
+   align-items : Nó nhận các giá trị để điều
+   khiển phần tử con theo hướng Vuông góc hướng chính
+*/

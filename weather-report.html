@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Relax app</title>
+  <link rel="stylesheet" href="css/weather.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="toggle-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <a href="weather-report.html">
+        <li>weather report</li>
+      </a>
+      <a href="chill-music.html">
+        <li>Chill music</li>
+      </a>
+    </ul>
+  </div>
+  <div class="weather-page">
+    <div class="weather-content">
+      <div class="location">
+        <h1 class="location-timezone">Time zone</h1>
+        <canvas class="icon" width="128" height="128"></canvas>
+      </div>
+
+      <div class="temperature">
+        <div class="Date-Time">
+          <h3 class="current-day"></h3>
+          <span class="current-date"></span>
+        </div>
+        <div class="degree-section">
+          <h2 class="temperature-degree">34</h2>
+          <span id="type-teperature">C</span>
+        </div>
+        <div class="temperature-description">It's fucking Hot</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/toggle.js"></script>
+  <script src="js/skycons.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+
+</html>
