@@ -1,10 +1,15 @@
-.sidebar {
+.sidebar,
+.image-sidebar,
+.image-sidebar-son {
     position: fixed;
-    width: 200px;
-    height: 100%;
+    height: 100vh;
     background: #151719;
-    left: -200px;
     transition: all 500ms linear;
+}
+
+.sidebar {
+    left: -200px;
+    width: 200px;
 }
 
 .sidebar ul a {
@@ -24,18 +29,22 @@
     left: 0px;
 }
 
-.sidebar .toggle-btn {
+.sidebar .toggle-btn,
+.image-sidebar .img-toggle-btn {
     position: absolute;
-    left: 230px;
     top: 20px;
     cursor: pointer;
+}
+
+.sidebar .toggle-btn {
+    left: 230px;
 }
 
 .sidebar .toggle-btn span {
     display: block;
     width: 30px;
     height: 5px;
-    background: #151719;
+    background: aliceblue;
     margin: 3px 0px;
     border-radius: 2px;
 }
