@@ -1,76 +1,77 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-size: 100% 100%;
-    background-image: url('../images-music/rain1.jpg');
-    height: 100vh;
-
+  background-size: 100% 100%;
+  background-image: url("../images-music/rain1.jpg");
+  height: 100vh;
+  -webkit-transition: background-image 1.5s ease-in-out;
+  transition: background-image 1.5s ease-in-out;
 }
 
 /*------------ size bar ------------ */
 
 .image-sidebar {
-    right: -330px;
-    width: 330px;
+  right: -330px;
+  width: 330px;
 }
 
 .image-sidebar-son {
-    right: -300px;
-    width: 300px;
-    background: #0c1823 !important;
-    border-left: 2px solid black;
-    overflow: scroll;
+  right: -300px;
+  width: 300px;
+  background: #0c1823 !important;
+  border-left: 2px solid black;
+  overflow: scroll;
 }
 
 .image-sidebar-son::-webkit-scrollbar {
-    width: 8px;
-    background-color: #f5f5f5;
+  width: 8px;
+  background-color: #f5f5f5;
 }
 
 .image-sidebar-son::-webkit-scrollbar-thumb {
-    background-color: #312727;
+  background-color: #312727;
 }
 
 .image-sidebar-son::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #f5f5f5;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
 }
 
 .image-sidebar ul li,
 .image-sidebar-son ul li {
-    color: #e2dfdf;
-    font-size: 20px;
-    list-style: none;
-    padding: 7px 7px;
-    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+  color: #e2dfdf;
+  font-size: 20px;
+  list-style: none;
+  padding: 7px 7px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 .image-sidebar ul li:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .active-right {
-    right: 0px;
+  right: 0px;
 }
 
 .image-sidebar-son.active-right-son {
-    right: 0px;
+  right: 0px;
 }
 
 .image-sidebar.active-image-right {
-    right: 300px;
+  right: 300px;
 }
 
 .image-sidebar .img-toggle-btn {
-    right: 350px;
+  right: 350px;
 }
 
 /*------------ end size bar ------------ */

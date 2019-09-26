@@ -52,6 +52,10 @@ class ImageUI {
     //side bar toggle 
     imgToggleBtn() {
         imgToggleBtn.addEventListener("click", event => {
+            if (imgSideBar.classList.contains('active-image-right')) {
+                imgSideBar.setAttribute('state', "close");
+                imgSideBar.setAttribute('type', null);
+            }
             if (imgSideBar.classList.contains('active-right')) {
                 imgSideBar.classList.remove('active-right');
             } else if (imgSideBar.classList.contains('active-image-right')) {
@@ -107,8 +111,19 @@ class ImageUI {
 
     changeSider(type) {
         let check = imgSideBar.getAttribute("type");
-        if (check === null || check === type) {
+        console.log(check)
+        let state = imgSideBar.getAttribute("state")
+        if (check === null || check === type || check === "null") {
             imgSideBar.setAttribute('type', type);
+            imageSidebarSon.classList.toggle("active-right-son");
+
+
+            if (state == "open") {
+                imgSideBar.setAttribute('state', "close");
+                imgSideBar.setAttribute('type', null);
+            } else imgSideBar.setAttribute('state', "open");
+
+
             if (imgSideBar.classList.contains("active-image-right")) {
                 imgSideBar.classList.remove("active-image-right");
                 imgSideBar.classList.add("active-right");
@@ -117,11 +132,13 @@ class ImageUI {
                 imgSideBar.classList.remove("active-right");
             }
 
-            imageSidebarSon.classList.toggle("active-right-son");
         } else {
             imgSideBar.setAttribute('type', type);
             this.showImageList(type);
         }
+
+
+
     }
 
 

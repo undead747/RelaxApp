@@ -96,7 +96,7 @@ class UI {
       const response = await fetch(api);
       const data = await response.json();
 
-      Storage.saveData(data);
+      ui.showUI(data);
     } catch (e) {
       console.log(e);
     }
@@ -119,6 +119,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(ui.getAPI);
-    ui.showUI(Storage.getAllData());
   }
 });
