@@ -46,11 +46,7 @@ class UI {
   showUI(data) {
     console.log(data);
 
-    const {
-      temperature,
-      summary,
-      icon
-    } = data.hourly.data[0];
+    const { temperature, summary, icon } = data.hourly.data[0];
 
     let day = new Date();
 
@@ -100,17 +96,6 @@ class UI {
     } catch (e) {
       console.log(e);
     }
-  }
-}
-
-class Storage {
-  static saveData(data) {
-    localStorage.setItem("weather", JSON.stringify(data));
-  }
-
-  static getAllData() {
-    const data = JSON.parse(localStorage.getItem("weather"));
-    return data;
   }
 }
 

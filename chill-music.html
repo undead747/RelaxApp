@@ -1,52 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Chill hop</title>
-    <!-- main css -->
-    <link rel="stylesheet" href="css/chill.css" />
-    <!-- side bar -->
-    <link rel="stylesheet" href="css/sidebar.css" />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="sidebar">
-      <div class="toggle-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul>
-        <a href="weather-report.html">
-          <li>weather report</li>
-        </a>
-        <a href="chill-music.html">
-          <li>Chill music</li>
-        </a>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Chill hop</title>
+  <!-- main css -->
+  <link rel="stylesheet" href="css/chill.css" />
+  <!-- side bar -->
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <!-- youtube css -->
+  <link rel="stylesheet" href="css/youtube.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/hoover-button.css">
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <div class="toggle-btn">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+    <ul>
+      <a href="weather-report.html">
+        <li>weather report</li>
+      </a>
+      <a href="chill-music.html">
+        <li>Chill music</li>
+      </a>
+    </ul>
+  </div>
+  <img src="" alt="">
 
+  <div class="image-sidebar">
+    <div class="img-toggle-btn">
+      <i class="fa fa-3x fa-instagram" style="color: aliceblue"></i>
+    </div>
     <div class="image-sidebar-son"></div>
+  </div>
 
-    <div class="image-sidebar">
-      <div class="img-toggle-btn">
-        <i class="fa fa-3x fa-instagram" style="color: aliceblue"></i>
+  <div class="youtube-toggle-btn">
+    youtube
+    <span></span><span></span><span></span><span></span>
+  </div>
+  <div class="youtube-block">
+    <div class="youtube-content">
+      <div class="title">
+        <button>Hover me !</button>
       </div>
-      <div class="image-sidebar-son"></div>
+      <div class="content">
+      </div>
     </div>
+  </div>
 
-    <!-- contentful -->
-    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
-    <!-- main csript -->
-    <script src="js/chill.js"></script>
-    <!-- toggle -->
-    <script src="js/toggle.js"></script>
-  </body>
+  <!-- contentful -->
+  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+  <!-- main csript -->
+  <script src="js/chill.js"></script>
+  <!-- toggle -->
+  <script src="js/toggle.js"></script>
+  <!-- youtube API load -->
+  <script src="js/youtubeAPI.js"></script>
+  <!-- bootstrap js library require -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <!--youtube API require -->
+  <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+    onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+
+</body>
+
 </html>
